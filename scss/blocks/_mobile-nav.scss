@@ -1,0 +1,63 @@
+.mobile-nav-wrapper {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  background: var(--footerBg);
+  padding: 30px 30px;
+  color: var(--footerTextColor);
+
+  a {
+    color: var(--footerTextColor);
+    transition: color 0.1s ease-in;
+    &:hover {
+      color: #fff
+    }
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.mobile-nav-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.mobile-cart {
+  font-size: 22px;
+  font-weight: 500;  
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  flex-grow: 1;
+  padding-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Nav */
+
+.mobile-nav {
+  display: grid;
+  gap: 20px;
+  font-size: 22px;
+}
+
+/* Sub Nuv*/
+
+.mobile-sub-nav {
+  padding: 20px 0 0 20px;
+  display: grid;
+  gap: 14px;
+  font-size: 16px;
+}
